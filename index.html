@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdi Gashahun | Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset all default margin, padding, and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .profile-img {
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            object-fit: cover;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #3498db;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                width: 90%;
+            }
+
+            .profile-img img {
+                width: 130px;
+                height: 130px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .social-links a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .profile-img img {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .social-links a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                padding: 15px;
+            }
+
+            .profile-img img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .social-links a {
+                font-size: 14px;
+                margin-right: 10px;
+            }
+
+            footer {
+                padding: 15px 0;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="profile-img">
+                <img src="image/pic.jpg" alt="Abdi Gashahun"> <!-- Updated image path -->
+            </div>
+            <h1>Abdi Gashahun</h1>
+            <p>Software Engineer at Adama Science and Technology University |</p>
+            <p>Web Developer | Tech Enthusiast</p>
+            
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Abdi Gashahun, a passionate web developer with a keen interest in building responsive and user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Here are some of my recent projects:</p>
+            <li>E-commerce web app</li>
+            <li>Learning web app</li>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:abdigashahun0@gmail.com">abdigashahun0@gmail.com</a></p>
+            <p>Phone: 0935618168</p>
+            <div class="social-links">
+                <a href="https://github.com/abdi-mangashahun" target="_blank">GitHub</a>
+                <a href="https://t.me/abdi_mik" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/abdi_mik" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/abdi_mik" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abdi Gashahun</p>
+    </footer>
+
+</body>
+</html>
