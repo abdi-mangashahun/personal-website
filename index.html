@@ -30,7 +30,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allow navbar items to wrap in smaller screens */
+            flex-wrap: nowrap; /* Keep navbar items in a row */
         }
 
         nav ul li {
@@ -125,14 +125,14 @@
 
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: row; /* Ensure items are in a row on mobile */
-                align-items: center;
+                flex-direction: row; /* Ensure items stay in a row on mobile */
+                justify-content: center; /* Align items to the center */
                 padding: 20px 0;
-                flex-wrap: wrap; /* Allow wrapping for small screens */
+                flex-wrap: nowrap; /* Prevent wrapping */
             }
 
             nav ul li {
-                margin: 10px 0;
+                margin: 10px 15px; /* Reduced margin for mobile */
             }
 
             .container {
@@ -186,7 +186,6 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -210,15 +209,7 @@
         </div>
     </section>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Here are some of my recent projects:</p>
-            <li>E-commerce web app</li>
-            <li>Learning web app</li>
-        </div>
-    </section>
-
+    <!-- Removed Portfolio Section, Contact Section now takes the space -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
