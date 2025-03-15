@@ -30,11 +30,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap; /* Keep navbar items in a row */
+            flex-wrap: wrap; /* Allow navbar items to wrap in smaller screens */
         }
 
         nav ul li {
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav ul li a {
@@ -127,12 +127,13 @@
             nav ul {
                 flex-direction: row; /* Ensure items stay in a row on mobile */
                 justify-content: center; /* Align items to the center */
-                padding: 20px 0;
-                flex-wrap: nowrap; /* Prevent wrapping */
+                padding: 10px 0;
+                flex-wrap: wrap; /* Allow wrapping for small screens */
             }
 
             nav ul li {
                 margin: 10px 15px; /* Reduced margin for mobile */
+                font-size: 14px; /* Reduce font size */
             }
 
             .container {
@@ -155,7 +156,11 @@
 
         @media (max-width: 480px) {
             nav ul {
-                padding: 15px;
+                padding: 10px;
+            }
+
+            nav ul li {
+                font-size: 12px; /* Even smaller font size for mobile */
             }
 
             .profile-img img {
@@ -195,7 +200,7 @@
     <section id="home" class="section">
         <div class="container">
             <div class="profile-img">
-                <img src="image/pic.jpg" alt="Abdi Gashahun"> <!-- Updated image path -->
+                <img src="image/pic.jpg" alt="Abdi Gashahun">
             </div>
             <h1>Abdi Gashahun</h1>
             <p>Software Engineer at Adama Science and Technology University |</p>
@@ -206,18 +211,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Abdi Gashahun, a passionate cybersecurity enthusiast with a keen interest in building secure and robust systems. I specialize in cyber security, web security, and ethical hacking.</p>
-        </div>
-    </section>
-
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Here are some of my recent projects:</p>
-            <ul>
-                <li>Cybersecurity Blog: A platform to discuss security topics and share knowledge.</li>
-                <li>Vulnerability Scanner: A simple tool to scan websites for common security vulnerabilities.</li>
-            </ul>
+            <p>Hello! I'm Abdi Gashahun, a passionate cybersecurity enthusiast with a keen interest in building secure and robust systems. I want to specialize in cyber security, web security, and ethical hacking.</p>
         </div>
     </section>
 
