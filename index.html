@@ -30,6 +30,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap; /* Allow navbar items to wrap in smaller screens */
         }
 
         nav ul li {
@@ -124,9 +125,10 @@
 
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: column;
+                flex-direction: row; /* Ensure items are in a row on mobile */
                 align-items: center;
                 padding: 20px 0;
+                flex-wrap: wrap; /* Allow wrapping for small screens */
             }
 
             nav ul li {
@@ -197,15 +199,14 @@
             </div>
             <h1>Abdi Gashahun</h1>
             <p>Software Engineer at Adama Science and Technology University |</p>
-            <p>Web Developer | Tech Enthusiast</p>
-            
+            <p>Cybersecurity Passionate | Tech Enthusiast</p>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Abdi Gashahun, a passionate web developer with a keen interest in building responsive and user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript.</p>
+            <p>Hello! I'm Abdi Gashahun, a passionate cybersecurity enthusiast with a keen interest in building secure and robust systems. I specialize in cyber security, web security, and ethical hacking.</p>
         </div>
     </section>
 
