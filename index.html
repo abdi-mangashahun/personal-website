@@ -30,7 +30,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allow navbar items to wrap in smaller screens */
+            flex-wrap: nowrap; /* Prevent wrapping on all screen sizes */
         }
 
         nav ul li {
@@ -128,11 +128,11 @@
                 flex-direction: row; /* Ensure items stay in a row on mobile */
                 justify-content: center; /* Align items to the center */
                 padding: 10px 0;
-                flex-wrap: wrap; /* Allow wrapping for small screens */
+                flex-wrap: nowrap; /* Prevent wrapping */
             }
 
             nav ul li {
-                margin: 10px 15px; /* Reduced margin for mobile */
+                margin: 10px 5px; /* Reduce margin for mobile */
                 font-size: 14px; /* Reduce font size */
             }
 
